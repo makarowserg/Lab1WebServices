@@ -1,5 +1,5 @@
 gunicorn --bind 127.0.0.1:5000 wsgi:app & APP_PID=$!
-sllep 5
+sleep 5
 echo start client
 python3 client.py
 sleep 5
